@@ -6,26 +6,35 @@
     <description>Recent content in Tags on daemon1024</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daemon1024.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>hugo</title>
-      <link>https://daemon1024.github.io/tags/hugo/</link>
-      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      <title>FOSS</title>
+      <link>https://daemon1024.github.io/tags/foss/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://daemon1024.github.io/tags/hugo/</guid>
+      <guid>https://daemon1024.github.io/tags/foss/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>i18n</title>
-      <link>https://daemon1024.github.io/tags/i18n/</link>
-      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      <title>Free Software</title>
+      <link>https://daemon1024.github.io/tags/free-software/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://daemon1024.github.io/tags/i18n/</guid>
+      <guid>https://daemon1024.github.io/tags/free-software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://daemon1024.github.io/tags/open-source/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://daemon1024.github.io/tags/open-source/</guid>
       <description></description>
     </item>
     
