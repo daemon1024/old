@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Barun Acharya">
+    <meta name="description" content="Shell A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like
+ sh or Bourne Shell bash or Bourne Again shell : It is the standard GNU shell used commonly by Linux users. csh or C Shell ksh or Korn Shell and many more . .  You can see what shell are available in your system by running cat /etc/shell">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Basic Shell commands and How do they execute?"/>
+<meta name="twitter:description" content="Shell A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like
+ sh or Bourne Shell bash or Bourne Again shell : It is the standard GNU shell used commonly by Linux users. csh or C Shell ksh or Korn Shell and many more . .  You can see what shell are available in your system by running cat /etc/shell"/>
+
+    <meta property="og:title" content="Basic Shell commands and How do they execute?" />
+<meta property="og:description" content="Shell A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like
+ sh or Bourne Shell bash or Bourne Again shell : It is the standard GNU shell used commonly by Linux users. csh or C Shell ksh or Korn Shell and many more . .  You can see what shell are available in your system by running cat /etc/shell" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daemon1024.github.io/posts/basic-shell-commands-and-how-do-they-execute/" />
+<meta property="article:published_time" content="2020-07-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-22T00:00:00+00:00" />
+
+
+    
+      <base href="https://daemon1024.github.io/posts/basic-shell-commands-and-how-do-they-execute/">
+    
+    <title>
+  Basic Shell commands and How do they execute? · Daemon1024
+</title>
+
+    
+      <link rel="canonical" href="https://daemon1024.github.io/posts/basic-shell-commands-and-how-do-they-execute/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://daemon1024.github.io/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://daemon1024.github.io/css/custom.css" />
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://daemon1024.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://daemon1024.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://daemon1024.github.io/">
+      Daemon1024
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://daemon1024.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://daemon1024.github.io/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Basic Shell commands and How do they execute?</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-07-22T00:00:00Z'>
+                July 22, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              6-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://daemon1024.github.io/categories/blog/">blog</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://daemon1024.github.io/tags/shell/">Shell</a>
+      <span class="separator">•</span>
+    <a href="https://daemon1024.github.io/tags/open-source/">Open Source</a>
+      <span class="separator">•</span>
+    <a href="https://daemon1024.github.io/tags/bash/">Bash</a>
+      <span class="separator">•</span>
+    <a href="https://daemon1024.github.io/tags/linux/">Linux</a>
+      <span class="separator">•</span>
+    <a href="https://daemon1024.github.io/tags/unix/">Unix</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h2 id="shell">Shell</h2>
+<p>A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like</p>
+<ul>
+<li><strong>sh</strong> or Bourne Shell</li>
+<li><strong>bash</strong> or Bourne Again shell : It is the standard GNU shell used commonly by Linux users.</li>
+<li><strong>csh</strong> or C Shell</li>
+<li><strong>ksh</strong> or Korn Shell</li>
+<li>and many more . .</li>
+</ul>
+<p>You can see what shell are available in your system by running <code>cat /etc/shell</code></p>
+<p>Since <code>bash</code> is the standard GNU shell, the focus of this blog will be that only.</p>
+<h2 id="execution-of-shell-commands">Execution of shell commands</h2>
+<p>There are three ways a command can be executed by <code>bash</code></p>
+<ul>
+<li>Built-in</li>
+<li>General</li>
+<li>Shell Script</li>
+</ul>
+<h3 id="general"><strong>General</strong></h3>
+<p><code>Bash</code> determines the type of program that is to be executed. Normal system commands exist in compiled form in your system. When such a program is executed , bash used <code>fork-and-exec</code> mechanism. This mechanism is a commonly used technique in UNIX and is used to create all UNIX processes. First the <code>fork()</code> process happens, a new child process is created where bash makes an exact copy of itself. The child process environment is identical to that of environment including the input and output devices except the process id. If you are wondering what <code>process</code> is , it is nothing but a special instance provided by the system that consists of all the services/resources that maybe utilised by a program during it&rsquo;s execution. After the forking process , the address space of child process is overwritten with the new data using <code>exec()</code>call to the system.</p>
+<h3 id="built-in-commands">Built-In Commands</h3>
+<p><code>Bash</code> <code>built-in</code> commands (also known as &ldquo;internal command&rdquo;) are part of the shell itself. Each built-in command is executed directly in the shell itself, instead of an external programme which the bash execute the general way.</p>
+<h3 id="how-to-differentiate-between-built-in-and-general-commands">How to differentiate between built-in and general commands</h3>
+<p>You can use <code>type</code> command followed by a given command to find out the type of the command.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ type cd
+cd is a shell builtin
+$ type type
+type is a shell builtin              <span style="font-style:italic"># type itslelf is a built in command</span>
+$ type ls
+ls is /usr/bin/ls
+</code></pre></div><p>As you can see <code>ls is /usr/bin/ls</code> so basically bash executes <code>/usr/bin/ls</code> the general way when <code>ls</code> command is called in shell.</p>
+<h3 id="scripts">Scripts</h3>
+<p>When a shell script is being executed, bash <code>forks</code> a new process. This process reads the lines from shell script one line at a time. Each line is read, interpreted and executed as if you were typing those commands from the keyboard.</p>
+<p>A sample bash script :</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="">#!/bin/bash
+</span><span style=""></span>
+echo <span style="font-style:italic">&#34;Hello World&#34;</span>
+
+pwd
+
+cd ..
+
+pwd
+
+type cd
+
+echo <span style="font-style:italic">&#34;Bye&#34;</span>
+</code></pre></div><p>Output :</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./script.sh
+Hello World
+/home/daemon1024/test/test1
+/home/daemon1024/test
+cd is a shell builtin
+Bye
+</code></pre></div><h2 id="common-shell-commands">Common shell commands</h2>
+<ul>
+<li>
+<p><code>pwd</code> - The <strong>print working directory</strong> command. As the name suggests, it prints out which directory you are in currently.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pwd
+/home
+</code></pre></div></li>
+<li>
+<p><code>ls</code> - It is used to <strong>list</strong> the contents of a directory.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pwd
+/
+$ ls
+bin   dev  home  lib32	libx32	    media  opt	 root  sbin  sys  usr
+boot  etc  lib	 lib64	lost+found  mnt    proc  run   srv   tmp  var
+$ ls home
+daemon1024  lost+found
+$ ls -l home
+total 20
+drwxr-xr-x 38 daemon1024 daemon1024  4096 Jul 24 14:45 daemon1024
+drwx------  2 root       root       16384 May 23 16:58 lost+found
+</code></pre></div></li>
+<li>
+<p><code>cd</code> - The <strong>change directory</strong> command. You can change your working directory using this command.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pwd
+/
+$ cd home
+$ pwd
+/home
+$ cd daemon1024
+$ pwd
+/home/daemon1024
+$ cd ..                    <span style="font-style:italic"># .. takes us one directory up.</span>
+$ pwd
+/home
+$ cd -                     <span style="font-style:italic"># - takes us to previous working directory.</span>
+/home/daemon1024
+</code></pre></div></li>
+<li>
+<p><code>mkdir</code> - The <strong>make directory</strong> command. You can create a new directory using this.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pwd
+/home/daemon1024
+$ cd test
+cd: no such file or directory: test    <span style="font-style:italic"># throws out an error</span>
+$ mkdir test
+$ cd test
+$ pwd
+/home/daemon1024/test
+</code></pre></div></li>
+<li>
+<p><code>cp</code> and <code>mv</code> - The <strong>copy</strong> and <strong>move</strong> command. <strong>cp</strong> command simply copies files and directories and the <strong>mv</strong> command moves.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pwd
+/home/daemon1024/test
+$ ls
+hello  hello1
+$ mkdir test1            <span style="font-style:italic"># make a new directory</span>
+$ ls
+hello  hello1  test1
+$ cd test1
+$ ls                     <span style="font-style:italic"># empty directory</span>
+$ cd ..
+$ cp hello test1         <span style="font-style:italic"># copy &lt;source&gt; &lt;destination&gt;</span>
+$ cd test1
+$ ls                     <span style="font-style:italic"># file copied</span>
+hello
+$ cd ..
+$ mv hello1 test1        <span style="font-style:italic"># move &lt;source&gt; &lt;destination&gt;</span>
+$ ls
+hello  test1             <span style="font-style:italic"># hello1 is not present in current directory now</span>
+$ cd test1
+$ ls
+hello  hello1            <span style="font-style:italic"># file moved</span>
+$ pwd
+/home/daemon1024/test/test1
+</code></pre></div></li>
+<li>
+<p><code>cat</code> - It is used to read files sequentially and writing them to standard output.</p>
+</li>
+<li>
+<p><code>head</code> and <code>tail</code> - The <strong>head</strong> command command prints lines from the beginning of a file, and the <strong>tail</strong> command prints lines from the end of files.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat hello.txt
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed <span style="font-weight:bold">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+$ head -n 3 hello.txt
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed <span style="font-weight:bold">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<span style="font-style:italic"># Prints 3 lines from the beginning</span>
+
+$ tail -n 2 hello.txt
+Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+<span style="font-style:italic"># Prints 2 lines from the end</span>
+
+$ tail -n +2 hello.txt
+consectetur adipiscing elit,
+sed <span style="font-weight:bold">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+<span style="font-style:italic"># Prints after skipping 2 lines from the beginning.</span>
+
+$ head -n -4 hello.txt
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed <span style="font-weight:bold">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<span style="font-style:italic"># Prints after skipping 4 lines from the end.</span>
+</code></pre></div></li>
+<li>
+<p><code>man</code> - It is used to display user manual of any command that we run in the shell.</p>
+<p>Syntax : <code>$man [OPTION]... [COMMAND NAME]...</code></p>
+<p>It provides a detailed view of the command which includes <code>NAME</code>, <code>SYNOPSIS</code>, <code>DESCRIPTION</code>, <code>OPTIONS</code>, <code>EXIT STATUS</code>, <code>RETURN VALUES</code>, <code>ERRORS</code>, <code>FILES</code>, <code>VERSIONS</code>, <code>EXAMPLES</code>, <code>AUTHORS</code> and <code>SEE ALSO</code>.</p>
+<p>An example man page of ls.</p>
+<p><img src="https://i.imgur.com/zNsUAFA.png" alt="man-page"></p>
+<p><code>man pages</code> are the most important and reliable source of any UNIX related query. To know more about man pages read <a href="https://man7.org/index.html">here</a>.</p>
+</li>
+</ul>
+<p>Hope you got to learn some new stuff through this blog post.</p>
+<p>Special thanks to folks at <a href="http://foss.training">#dgplug</a> for helping me learn new things in each session.</p>
+<p>If you are interested in learning more about shell and command-line itself, here are some resources :</p>
+<ul>
+<li><a href="http://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf">Bash Guide for Beginners</a></li>
+<li><a href="https://github.com/jlevy/the-art-of-command-line">The Art of Command Line</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "1024blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+        2020
+         Barun Acharya 
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

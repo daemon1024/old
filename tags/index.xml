@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Bash</title>
+      <link>https://daemon1024.github.io/tags/bash/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://daemon1024.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>FOSS</title>
       <link>https://daemon1024.github.io/tags/foss/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
@@ -30,11 +39,38 @@
     </item>
     
     <item>
+      <title>Linux</title>
+      <link>https://daemon1024.github.io/tags/linux/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://daemon1024.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Open Source</title>
       <link>https://daemon1024.github.io/tags/open-source/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://daemon1024.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>https://daemon1024.github.io/tags/shell/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://daemon1024.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unix</title>
+      <link>https://daemon1024.github.io/tags/unix/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://daemon1024.github.io/tags/unix/</guid>
       <description></description>
     </item>
     

@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Basic Shell commands and How do they execute?</title>
+      <link>https://daemon1024.github.io/posts/basic-shell-commands-and-how-do-they-execute/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://daemon1024.github.io/posts/basic-shell-commands-and-how-do-they-execute/</guid>
+      <description>Shell A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like
+ sh or Bourne Shell bash or Bourne Again shell : It is the standard GNU shell used commonly by Linux users. csh or C Shell ksh or Korn Shell and many more . .  You can see what shell are available in your system by running cat /etc/shell</description>
+    </item>
+    
+    <item>
       <title>Free vs Open-Source Software</title>
       <link>https://daemon1024.github.io/posts/free-vs-open-source-software/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
