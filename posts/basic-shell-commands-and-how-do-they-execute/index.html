@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Barun Acharya">
-    <meta name="description" content="Shell A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like
+    <meta name="description" content="Shell A shell is a command line interface for a UNIX-like operating system. A UNIX system offers a variety of shell types like
  sh or Bourne Shell bash or Bourne Again shell : It is the standard GNU shell used commonly by Linux users. csh or C Shell ksh or Korn Shell and many more . .  You can see what shell are available in your system by running cat /etc/shell">
     <meta name="keywords" content="blog,developer,personal">
 
@@ -15,11 +15,11 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Basic Shell commands and How do they execute?"/>
-<meta name="twitter:description" content="Shell A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like
+<meta name="twitter:description" content="Shell A shell is a command line interface for a UNIX-like operating system. A UNIX system offers a variety of shell types like
  sh or Bourne Shell bash or Bourne Again shell : It is the standard GNU shell used commonly by Linux users. csh or C Shell ksh or Korn Shell and many more . .  You can see what shell are available in your system by running cat /etc/shell"/>
 
     <meta property="og:title" content="Basic Shell commands and How do they execute?" />
-<meta property="og:description" content="Shell A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like
+<meta property="og:description" content="Shell A shell is a command line interface for a UNIX-like operating system. A UNIX system offers a variety of shell types like
  sh or Bourne Shell bash or Bourne Again shell : It is the standard GNU shell used commonly by Linux users. csh or C Shell ksh or Korn Shell and many more . .  You can see what shell are available in your system by running cat /etc/shell" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daemon1024.github.io/posts/basic-shell-commands-and-how-do-they-execute/" />
@@ -140,7 +140,7 @@
       <div>
         
         <h2 id="shell">Shell</h2>
-<p>A shell is a command line interface for UNIX-like operating system. A UNIX system offers a variety of shell types like</p>
+<p>A shell is a command line interface for a UNIX-like operating system. A UNIX system offers a variety of shell types like</p>
 <ul>
 <li><strong>sh</strong> or Bourne Shell</li>
 <li><strong>bash</strong> or Bourne Again shell : It is the standard GNU shell used commonly by Linux users.</li>
@@ -158,15 +158,15 @@
 <li>Shell Script</li>
 </ul>
 <h3 id="general"><strong>General</strong></h3>
-<p><code>Bash</code> determines the type of program that is to be executed. Normal system commands exist in compiled form in your system. When such a program is executed , bash used <code>fork-and-exec</code> mechanism. This mechanism is a commonly used technique in UNIX and is used to create all UNIX processes. First the <code>fork()</code> process happens, a new child process is created where bash makes an exact copy of itself. The child process environment is identical to that of environment including the input and output devices except the process id. If you are wondering what <code>process</code> is , it is nothing but a special instance provided by the system that consists of all the services/resources that maybe utilised by a program during it&rsquo;s execution. After the forking process , the address space of child process is overwritten with the new data using <code>exec()</code>call to the system.</p>
+<p><code>Bash</code> determines the type of program that is to be executed. Normal system commands exist in compiled form in your system. When such a program is executed , bash uses the &lsquo;fork-and-exec<code>mechanism. This mechanism is a commonly used technique in UNIX and is used to create all UNIX processes. First the</code>fork()<code>process happens, a new child process is created where bash makes an exact copy of itself. The child process environment is identical to that of the environment including the input and output devices except the process id. If you are wondering what</code>process<code>is , it is nothing but a special instance provided by the system that consists of all the services/resources that may be utilised by a program during its execution. After the forking process , the address space of the child process is overwritten with the new data using</code>exec()`call to the system.</p>
 <h3 id="built-in-commands">Built-In Commands</h3>
-<p><code>Bash</code> <code>built-in</code> commands (also known as &ldquo;internal command&rdquo;) are part of the shell itself. Each built-in command is executed directly in the shell itself, instead of an external programme which the bash execute the general way.</p>
+<p>Bash <code>built-in</code> commands (also known as &ldquo;internal command&rdquo;) are part of the shell itself. Each built-in command is executed directly in the shell itself, instead of an external programme which the bash executes the general way.</p>
 <h3 id="how-to-differentiate-between-built-in-and-general-commands">How to differentiate between built-in and general commands</h3>
-<p>You can use <code>type</code> command followed by a given command to find out the type of the command.</p>
+<p>You can use the <code>type</code> command followed by a given command to find out the type of the command.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ type cd
 cd is a shell builtin
 $ type type
-type is a shell builtin              <span style="font-style:italic"># type itslelf is a built in command</span>
+type is a shell builtin              <span style="font-style:italic"># type itself is a built in command</span>
 $ type ls
 ls is /usr/bin/ls
 </code></pre></div><p>As you can see <code>ls is /usr/bin/ls</code> so basically bash executes <code>/usr/bin/ls</code> the general way when <code>ls</code> command is called in shell.</p>
@@ -227,7 +227,7 @@ $ pwd
 $ cd ..                    <span style="font-style:italic"># .. takes us one directory up.</span>
 $ pwd
 /home
-$ cd -                     <span style="font-style:italic"># - takes us to previous working directory.</span>
+$ cd -                     <span style="font-style:italic"># - takes us to the previous working directory.</span>
 /home/daemon1024
 </code></pre></div></li>
 <li>
@@ -268,7 +268,7 @@ $ pwd
 /home/daemon1024/test/test1
 </code></pre></div></li>
 <li>
-<p><code>cat</code> - It is used to read files sequentially and writing them to standard output.</p>
+<p><code>cat</code> - It is used to read files sequentially and write them to standard output.</p>
 </li>
 <li>
 <p><code>head</code> and <code>tail</code> - The <strong>head</strong> command command prints lines from the beginning of a file, and the <strong>tail</strong> command prints lines from the end of files.</p>
@@ -308,7 +308,7 @@ sed <span style="font-weight:bold">do</span> eiusmod tempor incididunt ut labore
 <span style="font-style:italic"># Prints after skipping 4 lines from the end.</span>
 </code></pre></div></li>
 <li>
-<p><code>man</code> - It is used to display user manual of any command that we run in the shell.</p>
+<p><code>man</code> - It is used to display the user manual of any command that we run in the shell.</p>
 <p>Syntax : <code>$man [OPTION]... [COMMAND NAME]...</code></p>
 <p>It provides a detailed view of the command which includes <code>NAME</code>, <code>SYNOPSIS</code>, <code>DESCRIPTION</code>, <code>OPTIONS</code>, <code>EXIT STATUS</code>, <code>RETURN VALUES</code>, <code>ERRORS</code>, <code>FILES</code>, <code>VERSIONS</code>, <code>EXAMPLES</code>, <code>AUTHORS</code> and <code>SEE ALSO</code>.</p>
 <p>An example man page of ls.</p>
@@ -317,7 +317,7 @@ sed <span style="font-weight:bold">do</span> eiusmod tempor incididunt ut labore
 </li>
 </ul>
 <p>Hope you got to learn some new stuff through this blog post.</p>
-<p>Special thanks to folks at <a href="http://foss.training">#dgplug</a> for helping me learn new things in each session.</p>
+<p>Special thanks to folks at <a href="http://foss.training">#dgplug</a> for helping me learn new things in each session.</p>
 <p>If you are interested in learning more about shell and command-line itself, here are some resources :</p>
 <ul>
 <li><a href="http://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf">Bash Guide for Beginners</a></li>
