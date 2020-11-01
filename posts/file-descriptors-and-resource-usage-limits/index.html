@@ -149,7 +149,7 @@ Now that&rsquo;s weird cause my hardware wasn&rsquo;t the bottleneck, I had enou
 <p>I was working on a project in <em>go</em> where I had to open and play around with too many files at once ( around 50 thousand ). The program ran fine when I was working with one file at a time. But when I tried to make it concurrent, I had an error saying <code>Too many open files.</code></p>
 <p>Now that&rsquo;s weird cause my hardware wasn&rsquo;t the bottleneck, I had enough free ram, my CPU wasn&rsquo;t maxed out and I had plenty of empty storage. So I started wondering why would this happen.</p>
 <p>So the best way would have been to just paste that error on the internet, but I played around a bit more. I thought maybe tens of thousands of files were a bit too much for the process to handle and maybe something was wrong with my code too. So I scaled it down to around a 100 files and it worked great. Then I moved to some 1200 files and boom that error occurred again. Now I was kinda certain that the issue wasn&rsquo;t with my code or hardware but something was limiting it on the OS. I searched around a bit and realized there are some Resource Usage Limits set by default and I was going beyond em.</p>
-<h2 id="ulimit-and-resource-usage-limits"><code>ulimit</code> and Resource Usage Limits</h2>
+<h2 id="resource-usage-limits-and-ulimit">Resource Usage Limits and <code>ulimit</code></h2>
 <p>On UNIX systems, the <code>ulimit</code> command controls the limits on system resource such as max memory size, open files, pipe size, stack size, max user processes, virtual memory etc.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~ ❯❯❯ ulimit -a
 Maximum size of core files created                           (kB, -c) unlimited
@@ -199,7 +199,7 @@ daemon1024	    hard    nofile 	       5424288
 <p>If you didn&rsquo;t get it it&rsquo;s fine. <strong>Everything is a file</strong>  is one of the defining feature of UNIX and UNIX-like Operating System.</p>
 <p>In layman terms, every time you open a file the operating system creates an entry to represent that file and store the information about that opened file.</p>
 <p>This entry is stored in a <strong>file descriptor table</strong> and this table is kernel-resident. Each process has its own file descriptor table. An application passes the key to the kernel through a system call, and the kernel will access the file on behalf of the application, based on the key. The application itself cannot read or write the file descriptor table directly.</p>
-<p>Hope you got to learn some new stuff through this blog post. Look forward to my future endeavors âœŒï¸.</p>
+<p>Hope you got to learn some new stuff through this blog post. Look forward to my future endeavors.</p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html#ulimit">https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html</a> ( Search <code>ulimit</code> )</li>
