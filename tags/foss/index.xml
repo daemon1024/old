@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>FOSS on Daemon1024</title>
+    <title>FOSS on dæmon1024</title>
     <link>https://daemon1024.github.io/tags/foss/</link>
-    <description>Recent content in FOSS on Daemon1024</description>
+    <description>Recent content in FOSS on dæmon1024</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://daemon1024.github.io/tags/foss/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://daemon1024.github.io/tags/foss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Free vs Open-Source Software</title>
       <link>https://daemon1024.github.io/posts/free-vs-open-source-software/</link>

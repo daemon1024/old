@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on Daemon1024</title>
+    <title>Linux on dæmon1024</title>
     <link>https://daemon1024.github.io/tags/linux/</link>
-    <description>Recent content in Linux on Daemon1024</description>
+    <description>Recent content in Linux on dæmon1024</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://daemon1024.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://daemon1024.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Descriptors and Resource Usage Limits</title>
+      <link>https://daemon1024.github.io/posts/file-descriptors-and-resource-usage-limits/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://daemon1024.github.io/posts/file-descriptors-and-resource-usage-limits/</guid>
+      <description>Backstory I was working on a project in go where I had to open and play around with too many files at once ( around 50 thousand ). The program ran fine when I was working with one file at a time. But when I tried to make it concurrent, I had an error saying Too many open files.
+Now that&amp;rsquo;s weird cause my hardware wasn&amp;rsquo;t the bottleneck, I had enough free ram, my CPU wasn&amp;rsquo;t maxed out and I had plenty of empty storage.</description>
+    </item>
     
     <item>
       <title>Basic Shell commands and How do they execute?</title>

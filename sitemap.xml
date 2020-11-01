@@ -4,56 +4,76 @@
   
   <url>
     <loc>https://daemon1024.github.io/tags/bash/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://daemon1024.github.io/posts/basic-shell-commands-and-how-do-they-execute/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/categories/blog/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/categories/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://daemon1024.github.io/tags/file-descriptors/</loc>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://daemon1024.github.io/posts/file-descriptors-and-resource-usage-limits/</loc>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/tags/linux/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/tags/open-source/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/posts/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/tags/shell/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://daemon1024.github.io/tags/system-resources/</loc>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/tags/</loc>
-    <lastmod>2020-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://daemon1024.github.io/tags/ulimit/</loc>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://daemon1024.github.io/tags/unix/</loc>
+    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://daemon1024.github.io/posts/basic-shell-commands-and-how-do-they-execute/</loc>
     <lastmod>2020-07-24T00:00:00+00:00</lastmod>
   </url>
   
